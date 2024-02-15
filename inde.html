@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Weather App</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<div class="mdiv">
+	<div class="container">
+		<h2 style="color: yellow;">WEATHER FORCAST</h2>
+		<form>
+			<input type="text" name="city" id="cityname" placeholder="Enter a City" autofocus>
+			<button type="button" onclick="fetchCity()" style="background-color: transparent;"><img src="https://www.svgrepo.com/show/469738/search.svg" alt="search icon"   height="18px" width="22px"> </button>
+			<img src="https://i.gifer.com/3F3I.gif" height="140px" width="100%">
+			<br>
+
+			    <div align="center">			    	
+			     <img src="https://www.freeiconspng.com/uploads/temperature-icon-png-19.png"height="40px"> <span id="temp">0°</span><br>
+                <span id="city">CITY NAME</span>
+			    </div>
+			    <div >
+			    	<table >
+			    		<tr>
+			    			<td>
+			    				<h3>HUMIDITY</h3> 
+			    				 <img src="https://cdn-icons-png.flaticon.com/512/6126/6126291.png"height="29px"> <span id="humidity">0 g/kg</span>
+			    			</td>
+			    			<td>
+			    				<h3>WIND SPEED</h3>
+			    				 <img src="https://clipartcraft.com/images/wind-clipart-9.png" height="25px"> <span id="wind_speed">0 km/hr</span>
+			    			</td>
+			    		</tr>
+
+			    	</table>
+			    </div>
+		</form>
+		
+	</div>
+</div>
+</body>
+</html>
